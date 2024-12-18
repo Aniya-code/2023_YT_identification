@@ -1,7 +1,7 @@
 # 指纹采集
 ## 一、程序设计：
 
-该程序通过selenium控制chrome流量器从视频网址首页爬取视频URL列表，并依次对列表中的URL进行浏览。在浏览过程中通过tshark记录原始pcap数据包、通过mitmproxy对数据包进行解密后使用DPI技术识别出视频流并记录指纹信息、通过对视频流ip发icmp包记录实时的链路rtt信息。具体流程如下：
+该程序通过selenium控制chrome流量器从视频网址首页爬取视频URL列表，并依次对列表中的URL进行浏览。在浏览过程中通过tshark记录原始pcap数据包、通过mitmproxy对数据包进行解密。具体流程如下：
 
 ![Untitled](https://user-images.githubusercontent.com/49126608/230307683-8f4de303-9f64-44ba-868d-fa806a5374f9.png)
 
